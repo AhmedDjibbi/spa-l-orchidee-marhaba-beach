@@ -1,0 +1,706 @@
+<!DOCTYPE html>
+
+<html class="scroll-smooth" lang="fr"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Spa L'Orchidée Marhaba Beach — Sanctuaire Balnéaire &amp; Haute Thalassothérapie</title>
+<!-- Material Symbols & Typography -->
+<link href="https://fonts.googleapis.com" rel="preconnect"/>
+<link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;1,400;1,600&amp;family=Plus+Jakarta+Sans:wght@300;400;500;600;700&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<!-- Tailwind CSS & Theme Config -->
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<script id="tailwind-config">
+    tailwind.config = {
+      darkMode: "class",
+      theme: {
+        extend: {
+          "colors": {
+            "primary-fixed": "#ffdea5",
+            "outline-variant": "#d1c5b4",
+            "on-tertiary-container": "#403936",
+            "on-error-container": "#93000a",
+            "surface-container": "#f2ede8",
+            "on-secondary-fixed": "#111f11",
+            "on-secondary-container": "#586755",
+            "surface-variant": "#e6e2dd",
+            "error-container": "#ffdad6",
+            "inverse-on-surface": "#f5f0eb",
+            "secondary": "#536251",
+            "on-primary-container": "#4e3700",
+            "outline": "#7f7667",
+            "surface-container-highest": "#e6e2dd",
+            "on-primary": "#ffffff",
+            "primary": "#775a19",
+            "on-tertiary-fixed-variant": "#4c4542",
+            "tertiary-fixed": "#ece0db",
+            "surface": "#fef8f3",
+            "tertiary": "#655d59",
+            "background": "#fef8f3",
+            "tertiary-container": "#ada39f",
+            "surface-bright": "#fef8f3",
+            "surface-container-low": "#f8f3ee",
+            "on-primary-fixed": "#261900",
+            "surface-tint": "#775a19",
+            "on-error": "#ffffff",
+            "primary-fixed-dim": "#e9c176",
+            "on-tertiary-fixed": "#201a18",
+            "on-background": "#1d1b19",
+            "on-secondary-fixed-variant": "#3c4b3a",
+            "tertiary-fixed-dim": "#cfc4c0",
+            "inverse-surface": "#32302d",
+            "surface-container-high": "#ece7e2",
+            "on-primary-fixed-variant": "#5d4201",
+            "secondary-container": "#d4e4ce",
+            "secondary-fixed-dim": "#bbcbb6",
+            "secondary-fixed": "#d7e7d1",
+            "surface-dim": "#ded9d4",
+            "on-tertiary": "#ffffff",
+            "on-surface": "#1d1b19",
+            "surface-container-lowest": "#ffffff",
+            "inverse-primary": "#e9c176",
+            "on-surface-variant": "#4e4639",
+            "error": "#ba1a1a",
+            "on-secondary": "#ffffff",
+            "primary-container": "#c5a059"
+          },
+          "borderRadius": {
+            "DEFAULT": "0.125rem",
+            "lg": "0.25rem",
+            "xl": "0.5rem",
+            "full": "0.75rem"
+          },
+          "spacing": {
+            "margin-tablet": "2.5rem",
+            "margin-desktop": "4rem",
+            "space-xs": "0.375rem",
+            "gutter": "1.5rem",
+            "space-sm": "0.75rem",
+            "gutter-desktop": "2.5rem",
+            "margin": "1.25rem",
+            "space-md": "1.25rem",
+            "space-lg": "2.25rem",
+            "space-xl": "3.5rem"
+          },
+          "fontFamily": {
+            "headline-lg": ["Playfair Display"],
+            "caption": ["Plus Jakarta Sans"],
+            "subheading": ["Plus Jakarta Sans"],
+            "display-hero-mobile": ["Playfair Display"],
+            "body-lg": ["Plus Jakarta Sans"],
+            "label-caps": ["Plus Jakarta Sans"],
+            "headline-md": ["Playfair Display"],
+            "display-hero": ["Playfair Display"],
+            "body-md": ["Plus Jakarta Sans"],
+            "headline-sm": ["Playfair Display"],
+            "headline-lg-mobile": ["Playfair Display"]
+          },
+          "fontSize": {
+            "headline-lg": ["40px", {"lineHeight": "48px", "letterSpacing": "-0.01em", "fontWeight": "400"}],
+            "caption": ["12px", {"lineHeight": "18px", "letterSpacing": "0.02em", "fontWeight": "400"}],
+            "subheading": ["18px", {"lineHeight": "28px", "letterSpacing": "0.01em", "fontWeight": "400"}],
+            "display-hero-mobile": ["36px", {"lineHeight": "44px", "letterSpacing": "-0.01em", "fontWeight": "400"}],
+            "body-lg": ["16px", {"lineHeight": "26px", "letterSpacing": "0.005em", "fontWeight": "400"}],
+            "label-caps": ["11px", {"lineHeight": "16px", "letterSpacing": "0.14em", "fontWeight": "600"}],
+            "headline-md": ["28px", {"lineHeight": "36px", "letterSpacing": "0em", "fontWeight": "500"}],
+            "display-hero": ["56px", {"lineHeight": "64px", "letterSpacing": "-0.02em", "fontWeight": "400"}],
+            "body-md": ["14px", {"lineHeight": "22px", "letterSpacing": "0.01em", "fontWeight": "400"}],
+            "headline-sm": ["22px", {"lineHeight": "30px", "letterSpacing": "0.01em", "fontWeight": "500"}],
+            "headline-lg-mobile": ["28px", {"lineHeight": "36px", "letterSpacing": "0em", "fontWeight": "400"}]
+          }
+        },
+      },
+    }
+  </script>
+<style>
+    .material-symbols-outlined {
+      font-variation-settings: 'FILL' 0, 'wght' 300, 'GRAD' 0, 'opsz' 24;
+    }
+    .brass-border {
+      border: 1px solid rgba(197, 160, 89, 0.28);
+    }
+    .brass-glow {
+      box-shadow: 0 16px 36px -10px rgba(197, 160, 89, 0.16);
+    }
+    .glass-frosted {
+      background: rgba(254, 248, 243, 0.72);
+      backdrop-filter: blur(20px);
+      -webkit-backdrop-filter: blur(20px);
+    }
+    .glass-dark {
+      background: rgba(29, 27, 25, 0.65);
+      backdrop-filter: blur(18px);
+      -webkit-backdrop-filter: blur(18px);
+    }
+  </style>
+</head>
+<body class="bg-background text-on-surface antialiased selection:bg-primary-container selection:text-on-primary-container font-body-md text-body-md overflow-x-hidden">
+<!-- ==================== 1. FLOATING TRANSPARENT HEADER ==================== -->
+<header class="fixed top-0 left-0 w-full z-50 transition-all duration-300 ease-in-out py-5 px-6 md:px-16 flex items-center justify-between border-b border-primary-container/25 bg-inverse-surface/30 backdrop-blur-md" id="main-nav">
+<!-- Brand Logo and Identity -->
+<a class="flex items-center gap-3 group focus:outline-none" href="index.html">
+<img alt="Logo" class="h-11 w-auto object-contain transition-transform duration-300 group-hover:scale-105" src="https://lh3.googleusercontent.com/aida/ALJJyrBQDCYLEVrYRmb2OHWZGHLD9wLM74gu6nRkrmsUsYoG81BXUxFjUskcILioqrXk3wl0MCN9F2fbVq8rj-4xGHvKF5jR-6LhJJd38gl3K8Ul0rDei8UFwKMULcx3W72RRSBfL99mKsqSeb0Of5x9nT9GAVNHE8I29v0qx8NdZWCoiLnH0RUFwEbeNCpVL76u-2IlYOTvttN9HzoOUxfsQGrN_ee9iopntnpR_B5P6X-v4Ml009BOPcbFLxk"/>
+<div class="flex flex-col">
+<span class="font-headline-sm text-headline-sm tracking-widest text-surface font-semibold group-hover:text-primary-fixed-dim transition-colors">L'ORCHIDÉE</span>
+<span class="font-label-caps text-[9px] tracking-[0.22em] text-surface/80">MARHABA BEACH SPA &amp; RESORT</span>
+</div>
+</a>
+<!-- Center Navigation Links -->
+<nav class="hidden lg:flex items-center gap-8 bg-inverse-surface/40 backdrop-blur-md px-8 py-2.5 rounded-full border border-primary-container/30 shadow-sm">
+<a class="font-label-caps text-label-caps text-primary-fixed relative py-1 flex items-center gap-1.5 transition-colors" href="index.html">
+<span>Home</span>
+<span class="w-1 h-1 rounded-full bg-primary-container inline-block"></span>
+</a>
+<a class="font-label-caps text-label-caps text-surface/80 hover:text-primary-fixed transition-colors" href="#sanctuaire">Le Sanctuaire</a>
+<a class="font-label-caps text-label-caps text-surface/80 hover:text-primary-fixed transition-colors" href="#rituels">Soins &amp; Rituels</a>
+<a class="font-label-caps text-label-caps text-surface/80 hover:text-primary-fixed transition-colors" href="services.html">Services</a>
+<a class="font-label-caps text-label-caps text-surface/80 hover:text-primary-fixed transition-colors" href="contact.html">Contact</a>
+</nav>
+<!-- Right Trailing CTA Action -->
+<div class="flex items-center gap-4">
+<a class="hidden sm:inline-flex items-center gap-2 px-6 py-2.5 rounded-full bg-inverse-surface/60 hover:bg-inverse-surface text-surface text-label-caps font-label-caps tracking-widest border border-primary-container/50 brass-glow hover:border-primary-container transition-all duration-300" href="#reservation">
+<span class="material-symbols-outlined text-[16px] text-primary-fixed">calendar_month</span>
+<span>Réserver un Soin</span>
+</a>
+<!-- Mobile menu trigger -->
+<button aria-label="Ouvrir le menu" class="lg:hidden text-surface p-2 rounded-lg bg-inverse-surface/50 border border-primary-container/30" type="button">
+<span class="material-symbols-outlined">menu</span>
+</button>
+</div>
+</header>
+<!-- ==================== 2. FULL-BLEED 100VH HERO SECTION ==================== -->
+<section class="relative w-full h-screen min-h-[720px] flex items-center justify-center overflow-hidden bg-inverse-surface">
+<!-- Full-bleed background image with subtle atmospheric vignette -->
+<div class="absolute inset-0 w-full h-full bg-cover bg-center transition-transform duration-1000 scale-100" style="background-image: url('https://lh3.googleusercontent.com/aida/ALJJyrB0JyMjNCk_lWrCz1Ci7wUzF9DJ2SqGH75kanUY7Gbwgwlq9dd8SeC8Z88JC7yRrqf5WaFVzP77mwiHU5l9kbYFWjw0GjH0wSW6OiHsYuHlPAToShYzu_qSCfv1r0urihDgPiQtWMr75pzxg9bwNArVoMwm0TxzubmvuuhRTqZkeIF44A5d37arufemKN_WnR3S2Wfm9ejEtZpDVomXypwpHwPOBqYIi-kxjiYhxrBCItMVul6jVYQpcTc');">
+<!-- Gradient Layer: Dark top fade for nav, deep bottom anchor for readability, soft radial glow -->
+<div class="absolute inset-0 bg-gradient-to-b from-inverse-surface/80 via-inverse-surface/35 to-inverse-surface/90"></div>
+<div class="absolute inset-0 bg-[radial-gradient(circle_at_center,rgba(0,0,0,0.1)_0%,rgba(29,27,25,0.75)_100%)]"></div>
+</div>
+<!-- Editorial Centered Content Canvas -->
+<div class="relative z-10 max-w-[1120px] mx-auto px-6 md:px-12 text-center flex flex-col items-center pt-16">
+<!-- Prestige Sanctuary Badge -->
+<div class="inline-flex items-center gap-2 px-5 py-1.5 rounded-full glass-dark border border-primary-container/40 mb-6 text-primary-fixed tracking-[0.2em] font-label-caps text-label-caps">
+<span class="material-symbols-outlined text-[15px] text-primary-fixed" style="font-variation-settings: 'FILL' 1;">spa</span>
+<span>SANCTUAIRE BALNÉAIRE &amp; HAUTE THALASSOTHÉRAPIE</span>
+</div>
+<!-- Majestic Hero Headline -->
+<h1 class="font-display-hero md:text-display-hero text-display-hero-mobile text-surface mb-6 max-w-4xl tracking-tight leading-tight">
+        L'Art du Ressourcement Méditerranéen.
+      </h1>
+<!-- Evocative Subtitle -->
+<p class="font-subheading text-subheading text-surface/90 font-light max-w-2xl mb-10 leading-relaxed">
+        Une parenthèse suspendue entre brume thermale, pierres chaudes de travertin et la sérénité infinie de la mer.
+      </p>
+<!-- Dual Action Interactive CTA Buttons -->
+<div class="flex flex-col sm:flex-row items-center gap-4 sm:gap-6 mb-16">
+<a class="w-full sm:w-auto inline-flex items-center justify-center gap-3 px-8 py-3.5 rounded-full bg-primary-container hover:bg-primary-fixed-dim text-on-primary-container font-label-caps text-label-caps tracking-widest transition-all duration-300 brass-glow" href="#reservation">
+<span>Prendre Rendez-vous</span>
+<span class="material-symbols-outlined text-[18px]">arrow_forward</span>
+</a>
+<a class="w-full sm:w-auto inline-flex items-center justify-center gap-2 px-8 py-3.5 rounded-full glass-dark hover:bg-inverse-surface/80 text-surface border border-primary-container/40 hover:border-primary-container font-label-caps text-label-caps tracking-widest transition-all duration-300" href="#rituels">
+<span>Découvrir les Rituels</span>
+</a>
+</div>
+</div>
+<!-- Quick Hero Metrics / Amenities Bar at Bottom Edge -->
+<div class="absolute bottom-0 left-0 w-full z-20 border-t border-primary-container/25 glass-dark py-4 px-6 md:px-16">
+<div class="max-w-[1440px] mx-auto grid grid-cols-2 md:grid-cols-4 gap-4 text-center">
+<div class="flex items-center justify-center gap-2.5">
+<span class="material-symbols-outlined text-primary-fixed text-[18px]">hot_tub</span>
+<span class="font-caption text-caption text-surface/90 tracking-wide">Piscine Thermale à Débordement 34°C</span>
+</div>
+<div class="flex items-center justify-center gap-2.5 border-l border-primary-container/20">
+<span class="material-symbols-outlined text-primary-fixed text-[18px]">deck</span>
+<span class="font-caption text-caption text-surface/90 tracking-wide">Pavillons Privés Face Mer</span>
+</div>
+<div class="flex items-center justify-center gap-2.5 border-l border-primary-container/20">
+<span class="material-symbols-outlined text-primary-fixed text-[18px]">eco</span>
+<span class="font-caption text-caption text-surface/90 tracking-wide">Soins Botaniques Signatures</span>
+</div>
+<div class="flex items-center justify-center gap-2.5 border-l border-primary-container/20">
+<span class="material-symbols-outlined text-primary-fixed text-[18px]" style="font-variation-settings: 'FILL' 1;">hotel_class</span>
+<span class="font-caption text-caption text-surface/90 tracking-wide">5 Étoiles Palmarès Spa &amp; Beauté</span>
+</div>
+</div>
+</div>
+</section>
+<!-- ==================== 3. NARRATIVE & VALUE PILLARS ==================== -->
+<section class="py-space-xl px-6 md:px-margin-desktop max-w-[1440px] mx-auto" id="sanctuaire">
+<!-- Section Header -->
+<div class="text-center max-w-3xl mx-auto mb-16">
+<span class="font-label-caps text-label-caps text-primary tracking-[0.2em] block mb-2">HÉRITAGE THALASSO</span>
+<h2 class="font-headline-lg text-headline-lg md:text-headline-lg text-on-surface mb-6">L'Héritage Minéral &amp; Marin</h2>
+<div class="w-12 h-0.5 bg-primary-container mx-auto mb-6"></div>
+<p class="font-body-lg text-body-lg text-on-surface-variant leading-relaxed">
+        Au croisement de la course solaire méditerranéenne et du calme absolu des rives maritimes, notre sanctuaire fait revivre l'art antique des thermes. Nous fusionnons l’essence vibrante d’orchidées d'exception avec les vertus restauratrices d'une eau de mer puisée en profondeur.
+      </p>
+</div>
+<!-- 4 Cornerstone Value Pillar Cards -->
+<div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-gutter-desktop">
+<!-- Pillar 1 -->
+<div class="bg-surface-container-low p-8 rounded-lg brass-border transition-all duration-300 hover:-translate-y-1 hover:border-primary-container/60 hover:shadow-md">
+<div class="w-12 h-12 rounded-full bg-surface-container-high flex items-center justify-center mb-6 text-primary border border-primary-container/30">
+<span class="material-symbols-outlined text-[24px]">waves</span>
+</div>
+<h3 class="font-headline-sm text-headline-sm text-on-surface mb-3">Thermalisme Marin</h3>
+<p class="font-body-md text-body-md text-on-surface-variant leading-relaxed">
+          Eau de mer puisée et réchauffée à 34°C, riche en oligo-éléments vivifiants pour reminéraliser profondément le métabolisme.
+        </p>
+</div>
+<!-- Pillar 2 -->
+<div class="bg-surface-container-low p-8 rounded-lg brass-border transition-all duration-300 hover:-translate-y-1 hover:border-primary-container/60 hover:shadow-md">
+<div class="w-12 h-12 rounded-full bg-surface-container-high flex items-center justify-center mb-6 text-primary border border-primary-container/30">
+<span class="material-symbols-outlined text-[24px]" style="font-variation-settings: 'FILL' 1;">spa</span>
+</div>
+<h3 class="font-headline-sm text-headline-sm text-on-surface mb-3">Botanique d'Orchidée Rare</h3>
+<p class="font-body-md text-body-md text-on-surface-variant leading-relaxed">
+          Extraits cellulaires précieux stimulant la longévité cutanée, infusés dans des nectars purs certifiés éthiques.
+        </p>
+</div>
+<!-- Pillar 3 -->
+<div class="bg-surface-container-low p-8 rounded-lg brass-border transition-all duration-300 hover:-translate-y-1 hover:border-primary-container/60 hover:shadow-md">
+<div class="w-12 h-12 rounded-full bg-surface-container-high flex items-center justify-center mb-6 text-primary border border-primary-container/30">
+<span class="material-symbols-outlined text-[24px]">architecture</span>
+</div>
+<h3 class="font-headline-sm text-headline-sm text-on-surface mb-3">Architecture Bioclimatique</h3>
+<p class="font-body-md text-body-md text-on-surface-variant leading-relaxed">
+          Pierre de travertin taillée, brise marine et bois nobles assurant une circulation d'air douce et une acoustique apaisante.
+        </p>
+</div>
+<!-- Pillar 4 -->
+<div class="bg-surface-container-low p-8 rounded-lg brass-border transition-all duration-300 hover:-translate-y-1 hover:border-primary-container/60 hover:shadow-md">
+<div class="w-12 h-12 rounded-full bg-surface-container-high flex items-center justify-center mb-6 text-primary border border-primary-container/30">
+<span class="material-symbols-outlined text-[24px]">self_improvement</span>
+</div>
+<h3 class="font-headline-sm text-headline-sm text-on-surface mb-3">Praticiens Maîtres-Artisans</h3>
+<p class="font-body-md text-body-md text-on-surface-variant leading-relaxed">
+          Protocoles holistiques sur-mesure dispensés par des thérapeutes d'élite formés aux traditions orientales et occidentales.
+        </p>
+</div>
+</div>
+</section>
+<!-- ==================== 4. SIGNATURE CATALOG / OFFERINGS SHOWCASE ==================== -->
+<section class="py-space-xl bg-surface-container-low border-y border-primary-container/20" id="rituels">
+<div class="max-w-[1440px] mx-auto px-6 md:px-margin-desktop">
+<div class="flex flex-col md:flex-row md:items-end justify-between mb-16 gap-6">
+<div>
+<span class="font-label-caps text-label-caps text-primary tracking-[0.2em] block mb-2">COLLECTION EXCLUSIVE</span>
+<h2 class="font-headline-lg text-headline-lg text-on-surface">Nos Rituels Signatures d'Exception</h2>
+</div>
+<p class="font-body-md text-body-md text-on-surface-variant max-w-md">
+          Chaque protocole débute par un rituel d'accueil thalasso aux sels de roche et s’achève par une dégustation d'infusion florale rare.
+        </p>
+</div>
+<!-- Rituals Cards Grid -->
+<div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-gutter-desktop">
+<!-- Ritual Card 1 -->
+<div class="bg-surface rounded-lg p-6 brass-border flex flex-col justify-between hover:shadow-lg transition-all duration-300 group">
+<div>
+<div class="flex items-center justify-between mb-4">
+<span class="px-2.5 py-1 rounded bg-secondary-container text-on-secondary-container font-label-caps text-[10px] tracking-wider">SIGNATURE EMBLÈME</span>
+<span class="font-caption text-caption text-primary font-medium">120 min</span>
+</div>
+<h3 class="font-headline-sm text-headline-sm text-on-surface group-hover:text-primary transition-colors mb-3">
+              Le Grand Rituel Orchidée Impériale
+            </h3>
+<p class="font-body-md text-body-md text-on-surface-variant mb-6 leading-relaxed">
+              Enveloppement aux poudres précieuses, gommage soyeux et modelage liftant manuel aux nectars régénérants d'orchidée.
+            </p>
+</div>
+<div class="pt-6 border-t border-primary-container/20 flex items-center justify-between">
+<span class="font-headline-sm text-headline-sm text-primary font-semibold">280 €</span>
+<a class="inline-flex items-center gap-1.5 font-label-caps text-label-caps text-on-surface hover:text-primary tracking-widest transition-colors" href="#reservation">
+<span>Réserver ce Soin</span>
+<span class="material-symbols-outlined text-[16px]">north_east</span>
+</a>
+</div>
+</div>
+<!-- Ritual Card 2 -->
+<div class="bg-surface rounded-lg p-6 brass-border flex flex-col justify-between hover:shadow-lg transition-all duration-300 group">
+<div>
+<div class="flex items-center justify-between mb-4">
+<span class="px-2.5 py-1 rounded bg-secondary-container text-on-secondary-container font-label-caps text-[10px] tracking-wider">IMMERSION THERMALE</span>
+<span class="font-caption text-caption text-primary font-medium">90 min</span>
+</div>
+<h3 class="font-headline-sm text-headline-sm text-on-surface group-hover:text-primary transition-colors mb-3">
+              Bain Thermal &amp; Vapeurs d'Eucalyptus
+            </h3>
+<p class="font-body-md text-body-md text-on-surface-variant mb-6 leading-relaxed">
+              Immersion en bassin d'eau de mer chauffée, hammam en marbre blanc et friction énergisante aux huiles tièdes d'eucalyptus bio.
+            </p>
+</div>
+<div class="pt-6 border-t border-primary-container/20 flex items-center justify-between">
+<span class="font-headline-sm text-headline-sm text-primary font-semibold">195 €</span>
+<a class="inline-flex items-center gap-1.5 font-label-caps text-label-caps text-on-surface hover:text-primary tracking-widest transition-colors" href="#reservation">
+<span>Réserver ce Soin</span>
+<span class="material-symbols-outlined text-[16px]">north_east</span>
+</a>
+</div>
+</div>
+<!-- Ritual Card 3 -->
+<div class="bg-surface rounded-lg p-6 brass-border flex flex-col justify-between hover:shadow-lg transition-all duration-300 group">
+<div>
+<div class="flex items-center justify-between mb-4">
+<span class="px-2.5 py-1 rounded bg-secondary-container text-on-secondary-container font-label-caps text-[10px] tracking-wider">PAVILLON MARIN</span>
+<span class="font-caption text-caption text-primary font-medium">75 min</span>
+</div>
+<h3 class="font-headline-sm text-headline-sm text-on-surface group-hover:text-primary transition-colors mb-3">
+              Éveil Sensoriel Face à la Baie
+            </h3>
+<p class="font-body-md text-body-md text-on-surface-variant mb-6 leading-relaxed">
+              Massage décontractant en cabane privative sur pilotis avec son des vagues, brume iodée et baumes aromatiques fondants.
+            </p>
+</div>
+<div class="pt-6 border-t border-primary-container/20 flex items-center justify-between">
+<span class="font-headline-sm text-headline-sm text-primary font-semibold">160 €</span>
+<a class="inline-flex items-center gap-1.5 font-label-caps text-label-caps text-on-surface hover:text-primary tracking-widest transition-colors" href="#reservation">
+<span>Réserver ce Soin</span>
+<span class="material-symbols-outlined text-[16px]">north_east</span>
+</a>
+</div>
+</div>
+<!-- Ritual Card 4 -->
+<div class="bg-surface rounded-lg p-6 brass-border flex flex-col justify-between hover:shadow-lg transition-all duration-300 group">
+<div>
+<div class="flex items-center justify-between mb-4">
+<span class="px-2.5 py-1 rounded bg-secondary-container text-on-secondary-container font-label-caps text-[10px] tracking-wider">LITHOTHÉRAPIE</span>
+<span class="font-caption text-caption text-primary font-medium">150 min</span>
+</div>
+<h3 class="font-headline-sm text-headline-sm text-on-surface group-hover:text-primary transition-colors mb-3">
+              Cure Détox Thalasso &amp; Quartz Rose
+            </h3>
+<p class="font-body-md text-body-md text-on-surface-variant mb-6 leading-relaxed">
+              Drainage lymphatique aux pierres chaudes de travertin, lissage au quartz rose et masque marin réparateur à l'algue brune.
+            </p>
+</div>
+<div class="pt-6 border-t border-primary-container/20 flex items-center justify-between">
+<span class="font-headline-sm text-headline-sm text-primary font-semibold">340 €</span>
+<a class="inline-flex items-center gap-1.5 font-label-caps text-label-caps text-on-surface hover:text-primary tracking-widest transition-colors" href="#reservation">
+<span>Réserver ce Soin</span>
+<span class="material-symbols-outlined text-[16px]">north_east</span>
+</a>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- ==================== 5. EXPERIENTIAL SHOWCASE / BENTO GRID ==================== -->
+<section class="py-space-xl px-6 md:px-margin-desktop max-w-[1440px] mx-auto">
+<div class="text-center max-w-3xl mx-auto mb-16">
+<span class="font-label-caps text-label-caps text-primary tracking-[0.2em] block mb-2">EXPÉRIENCE SPATIALE</span>
+<h2 class="font-headline-lg text-headline-lg text-on-surface mb-4">L'Immersion au Sanctuaire</h2>
+<p class="font-body-md text-body-md text-on-surface-variant">Un itinéraire architectural conçu pour bercer les sens et restaurer l'équilibre intérieur.</p>
+</div>
+<!-- Bento Grid Layout -->
+<div class="grid grid-cols-1 md:grid-cols-3 md:grid-rows-2 gap-6 h-auto md:h-[620px]">
+<!-- Big Bento Item (Ocean Panorama & Pool) -->
+<div class="md:col-span-2 md:row-span-2 relative rounded-lg overflow-hidden brass-border group shadow-sm">
+<div class="absolute inset-0 bg-cover bg-center transition-transform duration-700 group-hover:scale-105" style="background-image: url('https://lh3.googleusercontent.com/aida/ALJJyrB0JyMjNCk_lWrCz1Ci7wUzF9DJ2SqGH75kanUY7Gbwgwlq9dd8SeC8Z88JC7yRrqf5WaFVzP77mwiHU5l9kbYFWjw0GjH0wSW6OiHsYuHlPAToShYzu_qSCfv1r0urihDgPiQtWMr75pzxg9bwNArVoMwm0TxzubmvuuhRTqZkeIF44A5d37arufemKN_WnR3S2Wfm9ejEtZpDVomXypwpHwPOBqYIi-kxjiYhxrBCItMVul6jVYQpcTc');"></div>
+<div class="absolute inset-0 bg-gradient-to-t from-inverse-surface/90 via-inverse-surface/30 to-transparent"></div>
+<div class="absolute bottom-0 left-0 p-8 md:p-10 z-10">
+<span class="font-label-caps text-label-caps text-primary-fixed mb-2 block tracking-widest">ESPACE MAÎTRE</span>
+<h3 class="font-headline-md text-headline-md text-surface mb-3">Piscine Thermale à Débordement &amp; Vapeur d'Eau Iodée</h3>
+<p class="font-body-md text-body-md text-surface/85 max-w-xl">
+            Suspendue au-dessus des falaises, notre bassin d'eau de mer tiède s'étend jusqu'à l'horizon marin. Une brume subtile s'élève à chaque lever et coucher de soleil.
+          </p>
+</div>
+</div>
+<!-- Bento Item 2 (Hammam) -->
+<div class="bg-surface-container-low p-8 rounded-lg brass-border flex flex-col justify-between group hover:border-primary-container transition-all">
+<div class="w-10 h-10 rounded-full bg-primary-container/20 text-primary flex items-center justify-center">
+<span class="material-symbols-outlined text-[20px]">water_drop</span>
+</div>
+<div>
+<span class="font-label-caps text-[10px] text-primary tracking-widest mb-1 block">PURIFICATION</span>
+<h4 class="font-headline-sm text-headline-sm text-on-surface mb-2">Hammam en Marbre Calacatta &amp; Dôme Céleste</h4>
+<p class="font-body-md text-body-md text-on-surface-variant">Bains de vapeur infusés aux essences de fleur d'oranger et voûte étoilée tamisée.</p>
+</div>
+</div>
+<!-- Bento Item 3 (Aromatherapy Atelier) -->
+<div class="bg-surface-container-low p-8 rounded-lg brass-border flex flex-col justify-between group hover:border-primary-container transition-all">
+<div class="w-10 h-10 rounded-full bg-primary-container/20 text-primary flex items-center justify-center">
+<span class="material-symbols-outlined text-[20px]">science</span>
+</div>
+<div>
+<span class="font-label-caps text-[10px] text-primary tracking-widest mb-1 block">CRÉATION SUR-MESURE</span>
+<h4 class="font-headline-sm text-headline-sm text-on-surface mb-2">Atelier d'Aromathérapie &amp; Infusions Botaniques</h4>
+<p class="font-body-md text-body-md text-on-surface-variant">Formulation personnalisée de vos élixirs de massage avant chaque protocole.</p>
+</div>
+</div>
+</div>
+</section>
+<!-- ==================== 6. CLIENT TESTIMONIALS & ACCOLADES ==================== -->
+<section class="py-space-xl bg-surface-container-high/40 border-t border-primary-container/20">
+<div class="max-w-[1440px] mx-auto px-6 md:px-margin-desktop">
+<!-- Award Badges Row -->
+<div class="flex flex-wrap items-center justify-center gap-8 md:gap-16 pb-16 border-b border-primary-container/20">
+<div class="flex items-center gap-3">
+<span class="material-symbols-outlined text-primary text-[28px]">award_star</span>
+<span class="font-label-caps text-label-caps text-on-surface tracking-wider">Prix Villégiature Best Hotel Spa Europe</span>
+</div>
+<div class="flex items-center gap-3">
+<span class="material-symbols-outlined text-primary text-[28px]">verified</span>
+<span class="font-label-caps text-label-caps text-on-surface tracking-wider">Condé Nast Traveler Gold List 2024</span>
+</div>
+<div class="flex items-center gap-3">
+<span class="material-symbols-outlined text-primary text-[28px]">stars</span>
+<span class="font-label-caps text-label-caps text-on-surface tracking-wider">Michelin Guide Wellness Sanctuary</span>
+</div>
+</div>
+<!-- Testimonial Editorial Cards -->
+<div class="grid grid-cols-1 md:grid-cols-3 gap-gutter-desktop pt-16">
+<div class="bg-surface p-8 rounded-lg brass-border flex flex-col justify-between">
+<div>
+<div class="flex gap-1 text-primary-container mb-4">
+<span class="material-symbols-outlined text-[18px]" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined text-[18px]" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined text-[18px]" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined text-[18px]" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined text-[18px]" style="font-variation-settings: 'FILL' 1;">star</span>
+</div>
+<p class="font-subheading text-[16px] italic text-on-surface-variant mb-6 leading-relaxed">
+              « Le rituel Orchidée Impériale face au coucher de soleil sur la mer est sans conteste l'expérience spa la plus transcendantale vécue en Méditerranée. »
+            </p>
+</div>
+<div>
+<h5 class="font-headline-sm text-[16px] text-on-surface font-semibold">Éléonore de Saint-Maur</h5>
+<span class="font-caption text-caption text-outline">Paris, France — Séjour Privilège</span>
+</div>
+</div>
+<div class="bg-surface p-8 rounded-lg brass-border flex flex-col justify-between">
+<div>
+<div class="flex gap-1 text-primary-container mb-4">
+<span class="material-symbols-outlined text-[18px]" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined text-[18px]" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined text-[18px]" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined text-[18px]" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined text-[18px]" style="font-variation-settings: 'FILL' 1;">star</span>
+</div>
+<p class="font-subheading text-[16px] italic text-on-surface-variant mb-6 leading-relaxed">
+              « L'architecture en travertin et la température de la piscine d'eau de mer créent une apesanteur rare. Le professionnalisme des praticiens est remarquable. »
+            </p>
+</div>
+<div>
+<h5 class="font-headline-sm text-[16px] text-on-surface font-semibold">Julian Vane-Tempest</h5>
+<span class="font-caption text-caption text-outline">London, UK — Membre Gold Sanctuary</span>
+</div>
+</div>
+<div class="bg-surface p-8 rounded-lg brass-border flex flex-col justify-between">
+<div>
+<div class="flex gap-1 text-primary-container mb-4">
+<span class="material-symbols-outlined text-[18px]" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined text-[18px]" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined text-[18px]" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined text-[18px]" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined text-[18px]" style="font-variation-settings: 'FILL' 1;">star</span>
+</div>
+<p class="font-subheading text-[16px] italic text-on-surface-variant mb-6 leading-relaxed">
+              « Une sérénité minérale absolue. L'atmosphère parfumée au pin parasol et à l'orchidée blanche reste gravée dans ma mémoire. »
+            </p>
+</div>
+<div>
+<h5 class="font-headline-sm text-[16px] text-on-surface font-semibold">Sophia Al-Mansoor</h5>
+<span class="font-caption text-caption text-outline">Genève, Suisse — Résidence Privée</span>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- ==================== 7. INTERACTIVE CONCIERGE & DIRECT BOOKING FORM ==================== -->
+<section class="py-space-xl px-6 md:px-margin-desktop max-w-[1440px] mx-auto" id="reservation">
+<div class="bg-surface rounded-xl brass-border overflow-hidden shadow-xl grid grid-cols-1 lg:grid-cols-12">
+<!-- Form Area -->
+<div class="lg:col-span-8 p-8 md:p-12">
+<div class="mb-10">
+<span class="font-label-caps text-label-caps text-primary tracking-[0.2em] block mb-2">CONCIERGERIE PRIVÉE</span>
+<h2 class="font-headline-lg text-headline-lg text-on-surface mb-3">Votre Consultation &amp; Réservation Privilégiée</h2>
+<p class="font-body-md text-body-md text-on-surface-variant">Complétez ce formulaire confidentiel pour réserver vos protocoles ou concevoir une demi-journée sur-mesure.</p>
+</div>
+<form class="space-y-6" onsubmit="event.preventDefault(); alert('Votre demande privilégiée a été transmise à notre Maître de Cabine. Nous vous contacterons sous 2 heures.');">
+<div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+<!-- Choix du Rituel -->
+<div>
+<label class="block font-label-caps text-label-caps text-on-surface mb-2">Choix du Rituel ou Service</label>
+<select class="w-full bg-surface-container-low border border-primary-container/40 rounded px-4 py-3 text-on-surface focus:border-primary-container focus:ring-0 transition-colors">
+<option>Le Grand Rituel Orchidée Impériale (120 min)</option>
+<option>Bain Thermal &amp; Vapeurs d'Eucalyptus (90 min)</option>
+<option>Éveil Sensoriel Face à la Baie (75 min)</option>
+<option>Cure Détox Thalasso &amp; Quartz Rose (150 min)</option>
+<option>Consultation &amp; Diagnostic Personnalisé</option>
+</select>
+</div>
+<!-- Nombre d'hôtes -->
+<div>
+<label class="block font-label-caps text-label-caps text-on-surface mb-2">Nombre d'Hôtes &amp; Configuration</label>
+<select class="w-full bg-surface-container-low border border-primary-container/40 rounded px-4 py-3 text-on-surface focus:border-primary-container focus:ring-0 transition-colors">
+<option>1 Hôte — Cabine Individuelle Privée</option>
+<option>2 Hôtes — Cabane Duo Signature Mer</option>
+<option>Privatisation Sanctuaire (Sur Demande)</option>
+</select>
+</div>
+<!-- Date -->
+<div>
+<label class="block font-label-caps text-label-caps text-on-surface mb-2">Date Souhaitée</label>
+<input class="w-full bg-surface-container-low border border-primary-container/40 rounded px-4 py-3 text-on-surface focus:border-primary-container focus:ring-0 transition-colors" type="date" value="2025-06-15"/>
+</div>
+<!-- Heure -->
+<div>
+<label class="block font-label-caps text-label-caps text-on-surface mb-2">Heure Préférée</label>
+<select class="w-full bg-surface-container-low border border-primary-container/40 rounded px-4 py-3 text-on-surface focus:border-primary-container focus:ring-0 transition-colors">
+<option>Matinée Lumineuse (09:30 - 12:30)</option>
+<option>Zénith Solaire (13:00 - 16:30)</option>
+<option>Crépuscule Doré Face Mer (17:00 - 20:30)</option>
+</select>
+</div>
+<!-- Nom & Prénom -->
+<div>
+<label class="block font-label-caps text-label-caps text-on-surface mb-2">Prénom &amp; Nom</label>
+<input class="w-full bg-surface-container-low border border-primary-container/40 rounded px-4 py-3 text-on-surface placeholder:text-outline focus:border-primary-container focus:ring-0 transition-colors" placeholder="Mme / M. ..." required="" type="text"/>
+</div>
+<!-- Téléphone -->
+<div>
+<label class="block font-label-caps text-label-caps text-on-surface mb-2">Téléphone Privé</label>
+<input class="w-full bg-surface-container-low border border-primary-container/40 rounded px-4 py-3 text-on-surface placeholder:text-outline focus:border-primary-container focus:ring-0 transition-colors" placeholder="+33 6 00 00 00 00" required="" type="tel"/>
+</div>
+</div>
+<!-- Notes -->
+<div>
+<label class="block font-label-caps text-label-caps text-on-surface mb-2">Notes Personnelles &amp; Préférences Aromatiques</label>
+<textarea class="w-full bg-surface-container-low border border-primary-container/40 rounded px-4 py-3 text-on-surface placeholder:text-outline focus:border-primary-container focus:ring-0 transition-colors" placeholder="Sensibilités cutanées, attentes spécifiques ou préférences d'essences..." rows="3"></textarea>
+</div>
+<!-- Submit Button -->
+<button class="w-full py-4 rounded bg-primary-container hover:bg-primary-fixed-dim text-on-primary-container font-label-caps text-label-caps tracking-widest brass-glow transition-all duration-300 flex items-center justify-center gap-2" type="submit">
+<span>Confirmer ma Demande de Rendez-vous</span>
+<span class="material-symbols-outlined text-[18px]">done_all</span>
+</button>
+</form>
+</div>
+<!-- Concierge Contact Sidebar -->
+<div class="lg:col-span-4 bg-surface-container-high p-8 md:p-12 border-t lg:border-t-0 lg:border-l border-primary-container/20 flex flex-col justify-between">
+<div>
+<div class="flex items-center gap-3 mb-6">
+<span class="material-symbols-outlined text-primary text-[28px]">room_service</span>
+<h4 class="font-headline-sm text-headline-sm text-on-surface">Conciergerie Dédiée</h4>
+</div>
+<p class="font-body-md text-body-md text-on-surface-variant mb-8 leading-relaxed">
+            Notre équipe d’accueil assure l’organisation fluide de votre venue, transferts maritimes ou réservations d’héliport inclus.
+          </p>
+<div class="space-y-6">
+<div class="flex items-start gap-4">
+<span class="material-symbols-outlined text-primary text-[20px] mt-1">call</span>
+<div>
+<span class="block font-label-caps text-label-caps text-outline mb-1">LIGNE DIRECTE SPA</span>
+<span class="font-subheading text-[16px] font-semibold text-on-surface">+33 (0)4 94 00 12 88</span>
+</div>
+</div>
+<div class="flex items-start gap-4">
+<span class="material-symbols-outlined text-primary text-[20px] mt-1">location_on</span>
+<div>
+<span class="block font-label-caps text-label-caps text-outline mb-1">LOCALISATION</span>
+<span class="font-body-md text-body-md text-on-surface">Baie de Marhaba, Front de Mer</span>
+</div>
+</div>
+<div class="flex items-start gap-4">
+<span class="material-symbols-outlined text-primary text-[20px] mt-1">schedule</span>
+<div>
+<span class="block font-label-caps text-label-caps text-outline mb-1">HORAIRES D'OUVERTURE</span>
+<span class="font-body-md text-body-md text-on-surface">09:00 — 21:00, 7j/7</span>
+</div>
+</div>
+</div>
+</div>
+<div class="mt-8 pt-8 border-t border-primary-container/20 text-center">
+<span class="font-caption text-caption text-outline italic">Accueil multilingue — Service majordome sur réservation</span>
+</div>
+</div>
+</div>
+</section>
+<!-- ==================== 8. LUXURY FOOTER ==================== -->
+<footer class="bg-surface-container-high border-t border-primary-container/30 w-full pt-space-xl pb-10">
+<div class="max-w-[1440px] mx-auto px-6 md:px-margin-desktop">
+<div class="grid grid-cols-1 md:grid-cols-12 gap-gutter-desktop mb-16">
+<!-- Brand Identity Column -->
+<div class="md:col-span-4 flex flex-col">
+<div class="flex items-center gap-3 mb-4">
+<img alt="Logo" class="h-12 w-auto object-contain" src="https://lh3.googleusercontent.com/aida/ALJJyrBQDCYLEVrYRmb2OHWZGHLD9wLM74gu6nRkrmsUsYoG81BXUxFjUskcILioqrXk3wl0MCN9F2fbVq8rj-4xGHvKF5jR-6LhJJd38gl3K8Ul0rDei8UFwKMULcx3W72RRSBfL99mKsqSeb0Of5x9nT9GAVNHE8I29v0qx8NdZWCoiLnH0RUFwEbeNCpVL76u-2IlYOTvttN9HzoOUxfsQGrN_ee9iopntnpR_B5P6X-v4Ml009BOPcbFLxk"/>
+<div class="flex flex-col">
+<span class="font-headline-sm text-headline-sm text-primary tracking-wider font-semibold">Spa L'Orchidée</span>
+<span class="font-label-caps text-[9px] tracking-widest text-outline">MARHABA BEACH RESORT</span>
+</div>
+</div>
+<p class="font-body-md text-body-md text-on-surface-variant max-w-sm mb-6 leading-relaxed">
+            Haute thalassothérapie, rituels botaniques et bien-être méditerranéen dans un havre de paix minéral face à la mer.
+          </p>
+<div class="flex items-center gap-3">
+<a aria-label="Instagram" class="w-9 h-9 rounded-full bg-surface border border-primary-container/30 flex items-center justify-center text-primary hover:border-primary transition-colors" href="index.html">
+<span class="material-symbols-outlined text-[18px]">photo_camera</span>
+</a>
+<a aria-label="Facebook" class="w-9 h-9 rounded-full bg-surface border border-primary-container/30 flex items-center justify-center text-primary hover:border-primary transition-colors" href="index.html">
+<span class="material-symbols-outlined text-[18px]">public</span>
+</a>
+<a aria-label="Mail" class="w-9 h-9 rounded-full bg-surface border border-primary-container/30 flex items-center justify-center text-primary hover:border-primary transition-colors" href="index.html">
+<span class="material-symbols-outlined text-[18px]">mail</span>
+</a>
+</div>
+</div>
+<!-- Links Navigation -->
+<div class="md:col-span-4 grid grid-cols-2 gap-4">
+<div>
+<h5 class="font-label-caps text-label-caps text-on-surface font-semibold tracking-wider mb-4">EXPLORATION</h5>
+<ul class="space-y-2.5 font-body-md text-body-md text-on-surface-variant">
+<li><a class="hover:text-primary transition-colors" href="#sanctuaire">Sanctuaire</a></li>
+<li><a class="hover:text-primary transition-colors" href="#rituels">Rituels Signatures</a></li>
+<li><a class="hover:text-primary transition-colors" href="services.html">Soins Visage &amp; Corps</a></li>
+<li><a class="hover:text-primary transition-colors" href="services.html">Massages Orientaux</a></li>
+</ul>
+</div>
+<div>
+<h5 class="font-label-caps text-label-caps text-on-surface font-semibold tracking-wider mb-4">PRIVILÈGES</h5>
+<ul class="space-y-2.5 font-body-md text-body-md text-on-surface-variant">
+<li><a class="hover:text-primary transition-colors" href="services.html">Tarifs &amp; Forfaits</a></li>
+<li><a class="hover:text-primary transition-colors" href="#reservation">Séjours Bien-être</a></li>
+<li><a class="hover:text-primary transition-colors" href="contact.html">Mentions Légales</a></li>
+<li><a class="hover:text-primary transition-colors" href="contact.html">Éthique Botanique</a></li>
+</ul>
+</div>
+</div>
+<!-- Newsletter Subscription -->
+<div class="md:col-span-4">
+<h5 class="font-label-caps text-label-caps text-on-surface font-semibold tracking-wider mb-2">LETTRE SENSORIELLE</h5>
+<p class="font-body-md text-body-md text-on-surface-variant mb-4">
+            Recevez nos invitations exclusives et le calendrier de nos résidences de maîtres praticiens.
+          </p>
+<form class="flex gap-2" onsubmit="event.preventDefault(); alert('Merci pour votre inscription à la Lettre Sensorielle.');">
+<input class="bg-surface border border-primary-container/40 rounded px-4 py-2.5 text-body-md text-on-surface placeholder:text-outline w-full focus:border-primary-container focus:ring-0" placeholder="Votre adresse email privée..." required="" type="email"/>
+<button class="px-5 py-2.5 rounded bg-primary-container hover:bg-primary-fixed-dim text-on-primary-container font-label-caps text-[11px] tracking-wider transition-colors shrink-0" type="submit">
+              S'inscrire
+            </button>
+</form>
+</div>
+</div>
+<!-- Copyright Bar -->
+<div class="pt-8 border-t border-primary-container/20 flex flex-col md:flex-row items-center justify-between gap-4">
+<span class="font-caption text-caption text-outline">
+          © 2025 Spa L'Orchidée Marhaba Beach. Tous droits réservés.
+        </span>
+<span class="font-caption text-caption text-outline">
+          Sanctuaire Thalassothérapie Méditerranéen &amp; Pavillons Privés
+        </span>
+</div>
+</div>
+</footer>
+<!-- Subtle Scroll Interactivity for Transparent Header -->
+<script>
+    window.addEventListener('scroll', () => {
+      const header = document.getElementById('main-nav');
+      if (window.scrollY > 50) {
+        header.classList.add('bg-surface/90', 'backdrop-blur-md', 'shadow-sm');
+        header.classList.remove('bg-transparent');
+      } else {
+        header.classList.remove('bg-surface/90', 'backdrop-blur-md', 'shadow-sm');
+        header.classList.add('bg-transparent');
+      }
+    });
+  </script>
+</body></html>

@@ -1,0 +1,417 @@
+<!DOCTYPE html>
+
+<html lang="en"><head><meta charset="utf-8"/><meta content="width=device-width, initial-scale=1.0" name="viewport"/><meta content="web_standard" name="shell-type"/><style>@layer base{html,body{margin:0;padding:0;}body{overscroll-behavior:none;}main>:first-child{margin-top:0!important;}main>:last-child{margin-bottom:0!important;}}::-webkit-scrollbar{display:none;}</style><script src="https://cdn.tailwindcss.com"></script><script id="tailwind-config">tailwind.config = {"darkMode": "class", "theme": {"extend": {"colors": {"tertiary-fixed": "#ece0db", "tertiary-fixed-dim": "#cfc4c0", "surface-container-high": "#ece7e2", "error": "#ba1a1a", "surface-container": "#f2ede8", "secondary-container": "#d4e4ce", "primary": "#775a19", "primary-fixed-dim": "#e9c176", "on-primary-container": "#4e3700", "primary-container": "#c5a059", "surface-tint": "#775a19", "surface-dim": "#ded9d4", "secondary-fixed": "#d7e7d1", "on-tertiary": "#ffffff", "on-tertiary-container": "#403936", "on-secondary-fixed-variant": "#3c4b3a", "inverse-surface": "#32302d", "on-secondary-fixed": "#111f11", "surface-container-highest": "#e6e2dd", "surface-container-lowest": "#ffffff", "on-background": "#1d1b19", "background": "#fef8f3", "outline": "#7f7667", "on-surface": "#1d1b19", "secondary": "#536251", "on-error": "#ffffff", "on-primary": "#ffffff", "surface": "#fef8f3", "surface-container-low": "#f8f3ee", "secondary-fixed-dim": "#bbcbb6", "on-secondary-container": "#586755", "on-error-container": "#93000a", "error-container": "#ffdad6", "primary-fixed": "#ffdea5", "on-primary-fixed": "#261900", "on-secondary": "#ffffff", "inverse-primary": "#e9c176", "tertiary": "#655d59", "on-tertiary-fixed": "#201a18", "outline-variant": "#d1c5b4", "on-surface-variant": "#4e4639", "surface-variant": "#e6e2dd", "surface-bright": "#fef8f3", "inverse-on-surface": "#f5f0eb", "on-tertiary-fixed-variant": "#4c4542", "tertiary-container": "#ada39f", "on-primary-fixed-variant": "#5d4201"}, "borderRadius": {"DEFAULT": "0.125rem", "lg": "0.25rem", "xl": "0.5rem", "full": "0.75rem"}, "spacing": {"margin-desktop": "4rem", "space-xs": "0.375rem", "space-sm": "0.75rem", "margin-tablet": "2.5rem", "space-xl": "3.5rem", "space-md": "1.25rem", "gutter": "1.5rem", "gutter-desktop": "2.5rem", "margin": "1.25rem", "space-lg": "2.25rem"}, "fontFamily": {"headline-md": ["Playfair Display"], "display-hero": ["Playfair Display"], "display-hero-mobile": ["Playfair Display"], "body-lg": ["Plus Jakarta Sans"], "subheading": ["Plus Jakarta Sans"], "headline-sm": ["Playfair Display"], "headline-lg": ["Playfair Display"], "headline-lg-mobile": ["Playfair Display"], "label-caps": ["Plus Jakarta Sans"], "body-md": ["Plus Jakarta Sans"], "caption": ["Plus Jakarta Sans"]}, "fontSize": {"headline-md": ["28px", {"lineHeight": "36px", "letterSpacing": "0em", "fontWeight": "500"}], "display-hero": ["56px", {"lineHeight": "64px", "letterSpacing": "-0.02em", "fontWeight": "400"}], "display-hero-mobile": ["36px", {"lineHeight": "44px", "letterSpacing": "-0.01em", "fontWeight": "400"}], "body-lg": ["16px", {"lineHeight": "26px", "letterSpacing": "0.005em", "fontWeight": "400"}], "subheading": ["18px", {"lineHeight": "28px", "letterSpacing": "0.01em", "fontWeight": "400"}], "headline-sm": ["22px", {"lineHeight": "30px", "letterSpacing": "0.01em", "fontWeight": "500"}], "headline-lg": ["40px", {"lineHeight": "48px", "letterSpacing": "-0.01em", "fontWeight": "400"}], "headline-lg-mobile": ["28px", {"lineHeight": "36px", "letterSpacing": "0em", "fontWeight": "400"}], "label-caps": ["11px", {"lineHeight": "16px", "letterSpacing": "0.14em", "fontWeight": "600"}], "body-md": ["14px", {"lineHeight": "22px", "letterSpacing": "0.01em", "fontWeight": "400"}], "caption": ["12px", {"lineHeight": "18px", "letterSpacing": "0.02em", "fontWeight": "400"}]}}}};</script>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@100..900&family=Plus+Jakarta+Sans:wght@100..900&display=swap" rel="stylesheet"/></head><body class="bg-surface font-body-md text-on-surface"><header class="fixed top-0 w-full z-50 bg-[#2C2623]/90 backdrop-blur-xl shadow-[0_1px_8px_rgba(0,0,0,0.04)]"><div class="h-20 max-w-[1440px] mx-auto px-gutter-desktop flex items-center justify-between"><div class="flex items-center gap-space-md"><img alt="Minimalist luxury gold orchid botanical line art emblem with elegant typography 'L'ORCHIDÉE' 'MARHABA BEACH' luxury spa and resort logo vector style, aged brass #C5A059 accent" class="h-8 w-auto object-contain" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCKNOnFGInp3G89BGmcqEAuZXishx_8mJVK9Ykp7sO3WLPaOl5j89xfbpFVFiotWu5y1U7f3hNRsViw5ccHRB54riXw91d-MElOX8MtkP67KhcW6F5i_xzPsGcbkv8KAOp8NZ7hc2REhtxfOSAAHweMtuuN34CQwvxr72mz_lRwQLEVzYt7FjuOHwple4wXRmgByTBZNBU7FY1XtfGHuvm2stHOiTVfAmBF7TSS33Fu2RXxZBb70VJXPS2Cumf9TK35Yo1LWTAbGPE"/><span class="font-headline-md text-primary-fixed-dim tracking-wider uppercase text-[20px]">L'Orchidée Marhaba</span></div><nav class="hidden lg:flex items-center gap-space-lg" data-active-classes="bg-primary-container text-on-primary-container font-semibold rounded-lg"><a class="text-body-md text-[#F5F0EB]/80 hover:text-white transition-colors" data-path="home" href="index.html">Home</a><a class="text-body-md text-[#F5F0EB]/80 hover:text-white transition-colors" data-path="le-sanctuaire" href="index.html">Le Sanctuaire</a><a class="text-body-md text-[#F5F0EB]/80 hover:text-white transition-colors" data-path="soins-rituels" href="index.html">Soins & Rituels</a><a aria-current="page" class="transition-colors bg-primary-container text-on-primary-container font-semibold rounded-lg" data-path="services" href="index.html">Services</a><a class="text-body-md text-[#F5F0EB]/80 hover:text-white transition-colors" data-path="contact" href="index.html">Contact</a><a class="px-space-md py-space-xs bg-primary-container text-on-primary-container font-label-caps rounded-lg hover:bg-primary-fixed-dim transition-all" data-path="reserver-un-soin" href="index.html">Réserver un Soin</a></nav><div class="w-8 h-8 rounded-full bg-primary flex items-center justify-center"><span class="material-symbols-outlined text-on-primary text-[18px]">person</span></div></div></header><main class="w-full pt-20 bg-surface"><div class="flex flex-col w-full bg-surface text-on-surface">
+<!-- 1. Hero Header Banner -->
+<section class="relative w-full h-[70vh] min-h-[500px] flex items-center justify-center overflow-hidden -mt-20 pt-20">
+<div class="absolute inset-0 bg-cover bg-center" data-alt="Ultra-luxury beach spa resort sanctuary overlooking Mediterranean turquoise calm sea, warm sunset lighting, infinity relaxation thermal pool with travertine marble steps, steaming warm water mist, white linen cabanas, candle reflections 2200k, organic orchid flower details, architectural interior-exterior blend, editorial luxury hospitality photography, award-winning architectural digest style" style="background-image: url('https://lh3.googleusercontent.com/aida/ALJJyrB0JyMjNCk_lWrCz1Ci7wUzF9DJ2SqGH75kanUY7Gbwgwlq9dd8SeC8Z88JC7yRrqf5WaFVzP77mwiHU5l9kbYFWjw0GjH0wSW6OiHsYuHlPAToShYzu_qSCfv1r0urihDgPiQtWMr75pzxg9bwNArVoMwm0TxzubmvuuhRTqZkeIF44A5d37arufemKN_WnR3S2Wfm9ejEtZpDVomXypwpHwPOBqYIi-kxjiYhxrBCItMVul6jVYQpcTc')"></div>
+<div class="absolute inset-0 bg-gradient-to-b from-[#2C2623]/70 via-[#2C2623]/50 to-[#FEF8F3]"></div>
+<div class="relative z-10 max-w-[1440px] mx-auto px-gutter-desktop w-full flex flex-col items-center text-center mt-12">
+<span class="text-label-caps text-primary-fixed-dim uppercase tracking-[0.2em] mb-space-sm">Catalogue & Tarifs</span>
+<h1 class="font-headline-lg text-[#F5F0EB] text-display-hero-mobile md:text-display-hero mb-space-sm font-normal">Nos Services & Protocoles</h1>
+<p class="text-subheading text-[#F5F0EB]/90 max-w-2xl mb-space-xl font-body-lg">Une parenthèse suspendue entre brume thermale et sérénité de la mer</p>
+<!-- Category Filter Tabs -->
+<div class="flex flex-wrap justify-center gap-space-sm bg-[#2C2623]/80 backdrop-blur-xl p-2 rounded-xl border border-[#C5A059]/30 shadow-xl">
+<button class="service-tab px-space-md py-space-xs rounded-lg text-label-caps bg-primary-container text-on-primary-container transition-all cursor-pointer" onclick="filterServices('all')">Tous les Soins</button>
+<button class="service-tab px-space-md py-space-xs rounded-lg text-label-caps text-[#F5F0EB] hover:bg-white/10 transition-all cursor-pointer" onclick="filterServices('thermal')">Thermalism Marin</button>
+<button class="service-tab px-space-md py-space-xs rounded-lg text-label-caps text-[#F5F0EB] hover:bg-white/10 transition-all cursor-pointer" onclick="filterServices('face-body')">Soins Visage & Corps</button>
+<button class="service-tab px-space-md py-space-xs rounded-lg text-label-caps text-[#F5F0EB] hover:bg-white/10 transition-all cursor-pointer" onclick="filterServices('signature')">Rituels Signature</button>
+<button class="service-tab px-space-md py-space-xs rounded-lg text-label-caps text-[#F5F0EB] hover:bg-white/10 transition-all cursor-pointer" onclick="filterServices('oriental')">Massages Orientaux</button>
+</div>
+</div>
+</section>
+<!-- 2. Comprehensive Offerings Grid -->
+<section class="max-w-[1440px] mx-auto px-gutter-desktop py-[5rem] w-full">
+<div class="flex justify-between items-end mb-space-xl">
+<div>
+<span class="text-label-caps text-primary uppercase tracking-widest">Collection de Soins</span>
+<h2 class="font-headline-lg text-on-surface text-headline-lg-mobile md:text-headline-lg mt-space-xs">Protocoles & Rituels Sur-Mesure</h2>
+</div>
+<p class="text-body-md text-on-surface-variant max-w-md hidden md:block">Chaque soin est une invitation au lâcher-prise absolu, combinant huiles botaniques rares, minéraux marins et gestuelles ancestrales.</p>
+</div>
+<!-- Grid of 8+ luxury treatments -->
+<div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-space-lg" id="services-grid">
+<!-- Card 1 -->
+<div class="service-card flex flex-col justify-between bg-surface-container-low backdrop-blur-md rounded-xl p-space-lg border border-[#C5A059]/20 shadow-sm hover:shadow-xl transition-all duration-300" data-category="signature">
+<div>
+<div class="relative h-64 rounded-lg overflow-hidden mb-space-md">
+<img class="w-full h-full object-cover" data-alt="Close-up of luxury spa treatment with hot stones, eucalyptus leaves, and warm ambient lighting on a travertine stone counter" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAXNv5Atcs2nQnb9-15utKa3nMgFqJi9EhC7_h8osOurEp9S9rbOd-IK9CTMN749rJCCa9OMvLLd-ssh_5VwxF3jokRrQDbpeyltwvNQjVGwKGeZovdcheYGc7jjmFqWTXqX2_Ldzz8nyZb2YJqj7tScY6T2W_0KpWM-XTAJt2i5tT4_Jzet1aLpV3HLJY6WIP67wU37aHCg7lnJ4edM7pSMJKM8OdSPcTAYMpAyWc8ajtX6Q4oz3Yvsv4_SfgdiFi4xLpHGa6_DGY"/>
+<div class="absolute top-3 right-3 bg-[#2C2623]/80 backdrop-blur-md px-3 py-1 rounded-full text-caption text-primary-fixed-dim border border-[#C5A059]/30">90 Min • 240 €</div>
+</div>
+<div class="flex items-center gap-space-xs mb-space-xs">
+<span class="px-2 py-0.5 rounded text-[10px] uppercase font-semibold bg-[#8A9A86]/15 text-[#475444] border border-[#8A9A86]/30">Rituel Signature</span>
+<span class="text-caption text-primary">• Orchidée & Or 24k</span>
+</div>
+<h3 class="font-headline-sm text-on-surface mb-space-xs">L'Élixir de l'Orchidée Blanche</h3>
+<p class="text-body-md text-on-surface-variant mb-space-md">Un soin d'exception prodigué avec des extraits d'orchidées rares et des paillettes d'or pur. Redessine l'ovale du visage et insuffle une radiance incomparable.</p>
+<div class="border-t border-[#C5A059]/20 pt-space-md mb-space-md">
+<span class="text-label-caps text-on-surface-variant block mb-1">Étapes du protocole :</span>
+<p class="text-caption text-on-surface-variant/80">Bain de vapeur floral • Gommage aux cristaux de quartz • Massage liftant kobido • Enveloppement nacré.</p>
+</div>
+</div>
+<button class="w-full py-space-sm bg-[#2C2623] text-[#F5F0EB] hover:bg-primary hover:text-on-primary transition-all rounded-lg text-label-caps uppercase tracking-wider flex items-center justify-center gap-2" onclick="openBookingModal('L\'Élixir de l\'Orchidée Blanche', '240 €')">
+<span>Réserver ce Soin</span>
+<span class="material-symbols-outlined text-[16px]">arrow_forward</span>
+</button>
+</div>
+<!-- Card 2 -->
+<div class="service-card flex flex-col justify-between bg-surface-container-low backdrop-blur-md rounded-xl p-space-lg border border-[#C5A059]/20 shadow-sm hover:shadow-xl transition-all duration-300" data-category="thermal">
+<div>
+<div class="relative h-64 rounded-lg overflow-hidden mb-space-md">
+<img class="w-full h-full object-cover" data-alt="Indoor thermal hydrotherapy pool with blue mineral water, stone archways, and soft atmospheric lighting in luxury spa" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCDryQh9PoB8zkIeUCC-m93pUPq7dGwiF3Cs9-Km9M_CXu2V_t4zbkqLO6H04iv9GVLV_NBpdgjGvS3eh2aN-0DyF6BpoCt0PWAZ9DDrKXyIt3apbOIYFt2AwD93oI6DMjR1DLkLO3EgDKkh_HkSzbTT3DeftDnAOI3SwB3F-R-IV-nneQ0boFbgjR0QlqekNkl-ICzjFyxFaQ_K11lHY7gK51aPpCi-R6fjjbQRyyitOjXAUabq1y7xgxok5KP4QVbnmDQsMLrrZY"/>
+<div class="absolute top-3 right-3 bg-[#2C2623]/80 backdrop-blur-md px-3 py-1 rounded-full text-caption text-primary-fixed-dim border border-[#C5A059]/30">60 Min • 170 €</div>
+</div>
+<div class="flex items-center gap-space-xs mb-space-xs">
+<span class="px-2 py-0.5 rounded text-[10px] uppercase font-semibold bg-[#8A9A86]/15 text-[#475444] border border-[#8A9A86]/30">Thermalism Marin</span>
+<span class="text-caption text-primary">• Thalasso Océanique</span>
+</div>
+<h3 class="font-headline-sm text-on-surface mb-space-xs">Bain Salin & Brume d'Iode</h3>
+<p class="text-body-md text-on-surface-variant mb-space-md">Immersion en bassin de thalassothérapie chauffé à 34°C saturé en sels marins profonds et ions négatifs pour une détoxification cellulaire totale.</p>
+<div class="border-t border-[#C5A059]/20 pt-space-md mb-space-md">
+<span class="text-label-caps text-on-surface-variant block mb-1">Étapes du protocole :</span>
+<p class="text-caption text-on-surface-variant/80">Hydro-massage sous affusion • Inhalation d'eucalyptus marin • Repose sur lit de quartz chaud.</p>
+</div>
+</div>
+<button class="w-full py-space-sm bg-[#2C2623] text-[#F5F0EB] hover:bg-primary hover:text-on-primary transition-all rounded-lg text-label-caps uppercase tracking-wider flex items-center justify-center gap-2" onclick="openBookingModal('Bain Salin & Brume d\'Iode', '170 €')">
+<span>Réserver ce Soin</span>
+<span class="material-symbols-outlined text-[16px]">arrow_forward</span>
+</button>
+</div>
+<!-- Card 3 -->
+<div class="service-card flex flex-col justify-between bg-surface-container-low backdrop-blur-md rounded-xl p-space-lg border border-[#C5A059]/20 shadow-sm hover:shadow-xl transition-all duration-300" data-category="face-body">
+<div>
+<div class="relative h-64 rounded-lg overflow-hidden mb-space-md">
+<img class="w-full h-full object-cover" data-alt="Serene massage table with folded white towels, lit aromatherapy candles, and delicate white orchids in luxury wellness room" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBOaTpgRPXvXnVP85zRhcrJqHAEPmqPXkrhicS6qMb-x6jD3ne4nmJQKcWgliKgRjIvD5-H8gQ_5bwPOLNLvxNuUwaBKH-RsnmAGnbtgzdPexyt23b3mm4d4SyY1VZ_UwS9IRG_xyFFnGqIuQNDe0ge4aQyVWCM0iCgxiQqz76SnsQMNNxoMWmQZmI6rRznr-drsSQvJNdjJLoc7I6Fdr7VvJmkYsCS5lUzPX3nHOScmEkZ7H1Ar3-zNYyUdBHA61NJwqchENLfm3w"/>
+<div class="absolute top-3 right-3 bg-[#2C2623]/80 backdrop-blur-md px-3 py-1 rounded-full text-caption text-primary-fixed-dim border border-[#C5A059]/30">75 Min • 195 €</div>
+</div>
+<div class="flex items-center gap-space-xs mb-space-xs">
+<span class="px-2 py-0.5 rounded text-[10px] uppercase font-semibold bg-[#8A9A86]/15 text-[#475444] border border-[#8A9A86]/30">Visage & Corps</span>
+<span class="text-caption text-primary">• Régénération Subtile</span>
+</div>
+<h3 class="font-headline-sm text-on-surface mb-space-xs">Soin Sublimation Nacre & Algues</h3>
+<p class="text-body-md text-on-surface-variant mb-space-md">Un gommage corporel aux micro-particules de nacre associé à un masque facial repulpant aux algues boréales. Redonne douceur et éclat satiné.</p>
+<div class="border-t border-[#C5A059]/20 pt-space-md mb-space-md">
+<span class="text-label-caps text-on-surface-variant block mb-1">Étapes du protocole :</span>
+<p class="text-caption text-on-surface-variant/80">Exfoliation nacrée • Masque algues fraîches • Modelage hydratant au beurre de karité.</p>
+</div>
+</div>
+<button class="w-full py-space-sm bg-[#2C2623] text-[#F5F0EB] hover:bg-primary hover:text-on-primary transition-all rounded-lg text-label-caps uppercase tracking-wider flex items-center justify-center gap-2" onclick="openBookingModal('Soin Sublimation Nacre & Algues', '195 €')">
+<span>Réserver ce Soin</span>
+<span class="material-symbols-outlined text-[16px]">arrow_forward</span>
+</button>
+</div>
+<!-- Card 4 -->
+<div class="service-card flex flex-col justify-between bg-surface-container-low backdrop-blur-md rounded-xl p-space-lg border border-[#C5A059]/20 shadow-sm hover:shadow-xl transition-all duration-300" data-category="oriental">
+<div>
+<div class="relative h-64 rounded-lg overflow-hidden mb-space-md">
+<img class="w-full h-full object-cover" data-alt="Traditional Hammam ritual setting with copper bowls, black soap foam, and warm vapor lighting in luxury spa" src="https://lh3.googleusercontent.com/aida-public/AB6AXuC3tMyXXd4S345v7OeXVdcDAhvIjM_8aLvvbLujQxp1cr7pjw2thgx0xpD7zGOj5B6WfGRSgaLjskMJggR0BTLg3AvelooMKDclbymDh0SstXSO_UahtrJfTMcGr0HoSJJzmqF0VOXtDk4WiWRJHKjshryEm_pq-atN60VKh7xRN7MAGMh1ah1PxKz5Dcpdupt6P7LsFhwAcX5bPI0AMD5rl9U0Grh8UbdEob9MQx5Qi227tCpUTebjYA_5CoXb1GyRv41nVTuVDLk"/>
+<div class="absolute top-3 right-3 bg-[#2C2623]/80 backdrop-blur-md px-3 py-1 rounded-full text-caption text-primary-fixed-dim border border-[#C5A059]/30">80 Min • 210 €</div>
+</div>
+<div class="flex items-center gap-space-xs mb-space-xs">
+<span class="px-2 py-0.5 rounded text-[10px] uppercase font-semibold bg-[#8A9A86]/15 text-[#475444] border border-[#8A9A86]/30">Massage Oriental</span>
+<span class="text-caption text-primary">• Hammam & Argan</span>
+</div>
+<h3 class="font-headline-sm text-on-surface mb-space-xs">Le Grand Rituel Hammam & Argan</h3>
+<p class="text-body-md text-on-surface-variant mb-space-md">Tradition ancestrale revisitée. Savon noir à l'eucalyptus, gommage profond au gant Kessa, et massage enveloppant à l'huile d'argan chaude ambrée.</p>
+<div class="border-t border-[#C5A059]/20 pt-space-md mb-space-md">
+<span class="text-label-caps text-on-surface-variant block mb-1">Étapes du protocole :</span>
+<p class="text-caption text-on-surface-variant/80">Hammam vapeur eucalyptus • Savonnage noir • Exfoliation Kessa • Massage à l'huile d'argan.</p>
+</div>
+</div>
+<button class="w-full py-space-sm bg-[#2C2623] text-[#F5F0EB] hover:bg-primary hover:text-on-primary transition-all rounded-lg text-label-caps uppercase tracking-wider flex items-center justify-center gap-2" onclick="openBookingModal('Le Grand Rituel Hammam & Argan', '210 €')">
+<span>Réserver ce Soin</span>
+<span class="material-symbols-outlined text-[16px]">arrow_forward</span>
+</button>
+</div>
+<!-- Card 5 -->
+<div class="service-card flex flex-col justify-between bg-surface-container-low backdrop-blur-md rounded-xl p-space-lg border border-[#C5A059]/20 shadow-sm hover:shadow-xl transition-all duration-300" data-category="signature">
+<div>
+<div class="relative h-64 rounded-lg overflow-hidden mb-space-md">
+<img class="w-full h-full object-cover" data-alt="Couples luxury spa cabana overlooking sea at sunset with candle glow and flower petals on massage tables" src="https://lh3.googleusercontent.com/aida-public/AB6AXuA9idtUEHUmvq0YBHWJhoSbEdlPGxAfLVk0MmcruHCiKI0CgtGR3pxykFav1b3h0NfPt4eDPVETZVEVtkELPbgZ3Vu0KUeSuZdVEnVcLL7WzOn08ah86N7lJ8sFkiPGnUAzEJHJzkbJLDpoXsqxme-qaU3f0sg8OAf4Id9zzEVBQthZRdyw_sp3oE_Sh_FfirKZo7U3MkDDHcw-5x-oLm5wKJORxBwBJ8zkARbCtkq9s53k1V7Y9FLWk3b1DOGiZ8QHowRsD838pOw"/>
+<div class="absolute top-3 right-3 bg-[#2C2623]/80 backdrop-blur-md px-3 py-1 rounded-full text-caption text-primary-fixed-dim border border-[#C5A059]/30">120 Min • 420 €</div>
+</div>
+<div class="flex items-center gap-space-xs mb-space-xs">
+<span class="px-2 py-0.5 rounded text-[10px] uppercase font-semibold bg-[#8A9A86]/15 text-[#475444] border border-[#8A9A86]/30">Rituel Signature</span>
+<span class="text-caption text-primary">• Duo Céleste</span>
+</div>
+<h3 class="font-headline-sm text-on-surface mb-space-xs">Échappée à Deux en Cabane Océan</h3>
+<p class="text-body-md text-on-surface-variant mb-space-md">Partagez un moment d'intimité absolue dans notre cabane privée face à la mer. Champagne millésimé, bain aux pétales d'orchidées et double massage synchronisé.</p>
+<div class="border-t border-[#C5A059]/20 pt-space-md mb-space-md">
+<span class="text-label-caps text-on-surface-variant block mb-1">Étapes du protocole :</span>
+<p class="text-caption text-on-surface-variant/80">Bain privatif aux fleurs • Massage synchronisé aux huiles précieuses • Dégustation de thés rares & fruits frais.</p>
+</div>
+</div>
+<button class="w-full py-space-sm bg-[#2C2623] text-[#F5F0EB] hover:bg-primary hover:text-on-primary transition-all rounded-lg text-label-caps uppercase tracking-wider flex items-center justify-center gap-2" onclick="openBookingModal('Échappée à Deux en Cabane Océan', '420 €')">
+<span>Réserver ce Soin</span>
+<span class="material-symbols-outlined text-[16px]">arrow_forward</span>
+</button>
+</div>
+<!-- Card 6 -->
+<div class="service-card flex flex-col justify-between bg-surface-container-low backdrop-blur-md rounded-xl p-space-lg border border-[#C5A059]/20 shadow-sm hover:shadow-xl transition-all duration-300" data-category="thermal">
+<div>
+<div class="relative h-64 rounded-lg overflow-hidden mb-space-md">
+<img class="w-full h-full object-cover" data-alt="Facial treatment in luxury spa with LED light therapy and organic botanical serums" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBkc8FXP-9G_Q_cwl6Z--RXp122JyslqEnY4Lq7fazIwO7oTW7sNOr2vxLi4_de6XASMllp0vZSBH_6Mr00TvqdhwQcVNegn1_tKcccf6CKyWu9OInHVaXKN1kHDfD7sWpS-WrZ2oLC7KU1n3ZNDonX3-GJfaR8VaQATIbn2i60gMYDEouyutqag4H6EPq63l39p-jp2ZauK259pZY1TgiV30IPhnjWVODsaRIbPkLR3JWmv-qS1I3wYkaMLxYLJpGMIRQejm5TMF0"/>
+<div class="absolute top-3 right-3 bg-[#2C2623]/80 backdrop-blur-md px-3 py-1 rounded-full text-caption text-primary-fixed-dim border border-[#C5A059]/30">60 Min • 180 €</div>
+</div>
+<div class="flex items-center gap-space-xs mb-space-xs">
+<span class="px-2 py-0.5 rounded text-[10px] uppercase font-semibold bg-[#8A9A86]/15 text-[#475444] border border-[#8A9A86]/30">Thermalism Marin</span>
+<span class="text-caption text-primary">• Cryo-Therapie & Eaux</span>
+</div>
+<h3 class="font-headline-sm text-on-surface mb-space-xs">Infusion Cryo-Marine & Visage</h3>
+<p class="text-body-md text-on-surface-variant mb-space-md">Alternance de stimulations thermiques froides et de sérums marins cryogénisés. Idéal pour retendre les tissus, stimuler le collagène et illuminer le teint.</p>
+<div class="border-t border-[#C5A059]/20 pt-space-md mb-space-md">
+<span class="text-label-caps text-on-surface-variant block mb-1">Étapes du protocole :</span>
+<p class="text-caption text-on-surface-variant/80">Nettoyage enzymatique • Modelage aux globes glacés • Masque tenseur cryo-marin.</p>
+</div>
+</div>
+<button class="w-full py-space-sm bg-[#2C2623] text-[#F5F0EB] hover:bg-primary hover:text-on-primary transition-all rounded-lg text-label-caps uppercase tracking-wider flex items-center justify-center gap-2" onclick="openBookingModal('Infusion Cryo-Marine & Visage', '180 €')">
+<span>Réserver ce Soin</span>
+<span class="material-symbols-outlined text-[16px]">arrow_forward</span>
+</button>
+</div>
+<!-- Card 7 -->
+<div class="service-card flex flex-col justify-between bg-surface-container-low backdrop-blur-md rounded-xl p-space-lg border border-[#C5A059]/20 shadow-sm hover:shadow-xl transition-all duration-300" data-category="face-body">
+<div>
+<div class="relative h-64 rounded-lg overflow-hidden mb-space-md">
+<img class="w-full h-full object-cover" data-alt="Relaxing full body massage with warm aromatherapy oil in minimalist sanctuary room" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBimSsqNLaZtOCibxtXsAIYbDCbI8C_2MlbNPrXepp7uDfPvvzUjJP2D7BU1odQRXaLQSOe6PMGKO_pF1C_LqA55b7g1_vx-UgICjZgrbL7te1VkY_SLMgFyjruinq3aCcUvgxBK10W06MBk09BTz0u12PsReyZ1xy_X_3ZHXq8QbyKQpdSAqWDPeyFDrtG69whMptgQew52Gie8cGPPub76S28tUuZXZ1TqGQNbYyP-9wLuNgDRkm_V76Cp3QyC9Lm1l9_3KjrDCo"/>
+<div class="absolute top-3 right-3 bg-[#2C2623]/80 backdrop-blur-md px-3 py-1 rounded-full text-caption text-primary-fixed-dim border border-[#C5A059]/30">90 Min • 220 €</div>
+</div>
+<div class="flex items-center gap-space-xs mb-space-xs">
+<span class="px-2 py-0.5 rounded text-[10px] uppercase font-semibold bg-[#8A9A86]/15 text-[#475444] border border-[#8A9A86]/30">Visage & Corps</span>
+<span class="text-caption text-primary">• Détox Profonde</span>
+</div>
+<h3 class="font-headline-sm text-on-surface mb-space-xs">Drainage Lymphatique & Contour</h3>
+<p class="text-body-md text-on-surface-variant mb-space-md">Massage tonique et rythmée inspiré des techniques médicales de drainage, associé à une huile drainante aux agrumes méditerranéens et genévrier.</p>
+<div class="border-t border-[#C5A059]/20 pt-space-md mb-space-md">
+<span class="text-label-caps text-on-surface-variant block mb-1">Étapes du protocole :</span>
+<p class="text-caption text-on-surface-variant/80">Bilan circulatoire • Pressions douces et rythmées • Application d'une lotion fraîcheur jambes légères.</p>
+</div>
+</div>
+<button class="w-full py-space-sm bg-[#2C2623] text-[#F5F0EB] hover:bg-primary hover:text-on-primary transition-all rounded-lg text-label-caps uppercase tracking-wider flex items-center justify-center gap-2" onclick="openBookingModal('Drainage Lymphatique & Contour', '220 €')">
+<span>Réserver ce Soin</span>
+<span class="material-symbols-outlined text-[16px]">arrow_forward</span>
+</button>
+</div>
+<!-- Card 8 -->
+<div class="service-card flex flex-col justify-between bg-surface-container-low backdrop-blur-md rounded-xl p-space-lg border border-[#C5A059]/20 shadow-sm hover:shadow-xl transition-all duration-300" data-category="oriental">
+<div>
+<div class="relative h-64 rounded-lg overflow-hidden mb-space-md">
+<img class="w-full h-full object-cover" data-alt="Traditional oriental massage oils and brass vessels in luxury wellness sanctuary" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBU160oZhzS-cnFGjBnC67m3KNZMSO7Oj1H7VqPZ0Aqic_9WScBu9O_3yRF2KSLxZ85ZurJspTRorE6WuIKNyl1RvAaZ4qmFpVLDU4nGtVKup6Ieos6eeCuoca6T-BE1iMhfxzpQCJdpBoX9fSYAvxUGb2onV3NjuXH2jQ2SsMSHAzOWQpdNUxdTcnGBKaAT4aig1xHC-r3txjnaL7Of0F_dZP56RfmG2SGhVfAC7jCfhJXkEzKT6-BEHVFEzQnk1zfq-sRD1DVRvA"/>
+<div class="absolute top-3 right-3 bg-[#2C2623]/80 backdrop-blur-md px-3 py-1 rounded-full text-caption text-primary-fixed-dim border border-[#C5A059]/30">75 Min • 190 €</div>
+</div>
+<div class="flex items-center gap-space-xs mb-space-xs">
+<span class="px-2 py-0.5 rounded text-[10px] uppercase font-semibold bg-[#8A9A86]/15 text-[#475444] border border-[#8A9A86]/30">Massage Oriental</span>
+<span class="text-caption text-primary">• Énergies & Souffle</span>
+</div>
+<h3 class="font-headline-sm text-on-surface mb-space-xs">Massage Berbère aux Épices Chaudes</h3>
+<p class="text-body-md text-on-surface-variant mb-space-md">Massage appuyé et décontracturant utilisant des pochons de lin remplis de sable chaud, de cumin et de cannelle pour relâcher les tensions profondes du dos.</p>
+<div class="border-t border-[#C5A059]/20 pt-space-md mb-space-md">
+<span class="text-label-caps text-on-surface-variant block mb-1">Étapes du protocole :</span>
+<p class="text-caption text-on-surface-variant/80">Application de pochons chauds • Étirements doux • Friction tonique aux huiles ambrées.</p>
+</div>
+</div>
+<button class="w-full py-space-sm bg-[#2C2623] text-[#F5F0EB] hover:bg-primary hover:text-on-primary transition-all rounded-lg text-label-caps uppercase tracking-wider flex items-center justify-center gap-2" onclick="openBookingModal('Massage Berbère aux Épices Chaudes', '190 €')">
+<span>Réserver ce Soin</span>
+<span class="material-symbols-outlined text-[16px]">arrow_forward</span>
+</button>
+</div>
+</div>
+</section>
+<!-- 3. Bespoke Packages & VIP Memberships -->
+<section class="w-full bg-surface-container py-[6rem]">
+<div class="max-w-[1440px] mx-auto px-gutter-desktop">
+<div class="text-center max-w-2xl mx-auto mb-space-xl">
+<span class="text-label-caps text-primary uppercase tracking-widest">Immersion Totale</span>
+<h2 class="font-headline-lg text-on-surface text-headline-lg-mobile md:text-headline-lg mt-space-xs mb-space-sm">Pass Résidentiels & Rituels Privés</h2>
+<p class="text-body-lg text-on-surface-variant">Des programmes holistiques conçus pour une régénération en profondeur sur une demi-journée, une journée entière ou à l'année.</p>
+</div>
+<div class="grid grid-cols-1 lg:grid-cols-3 gap-space-lg">
+<!-- Package 1 -->
+<div class="bg-surface rounded-xl p-space-lg border border-[#C5A059]/20 shadow-sm flex flex-col justify-between">
+<div>
+<div class="flex justify-between items-start mb-space-md">
+<span class="text-label-caps text-primary uppercase">Demi-Journée</span>
+<span class="font-headline-md text-on-surface text-[24px]">380 €</span>
+</div>
+<h3 class="font-headline-sm text-on-surface mb-space-xs">Parenthèse Marine & Sérénité</h3>
+<p class="text-body-md text-on-surface-variant mb-space-lg">Accès illimité aux bassins thermaux extérieurs, un soin signature de 90 minutes au choix et déjeuner détox biologique servi en cabane privée.</p>
+<ul class="space-y-3 mb-space-lg">
+<li class="flex items-center gap-2 text-body-md text-on-surface">
+<span class="material-symbols-outlined text-primary text-[18px]">check_circle</span>
+<span>Accès thermal illimité (4h)</span>
+</li>
+<li class="flex items-center gap-2 text-body-md text-on-surface">
+<span class="material-symbols-outlined text-primary text-[18px]">check_circle</span>
+<span>Soin au choix 90 min</span>
+</li>
+<li class="flex items-center gap-2 text-body-md text-on-surface">
+<span class="material-symbols-outlined text-primary text-[18px]">check_circle</span>
+<span>Déjeuner signature & jus frais</span>
+</li>
+</ul>
+</div>
+<button class="w-full py-space-sm bg-[#2C2623] text-[#F5F0EB] hover:bg-primary hover:text-on-primary transition-all rounded-lg text-label-caps uppercase tracking-wider" onclick="openBookingModal('Pass Demi-Journée Parenthèse Marine', '380 €')">Sélectionner le Pass</button>
+</div>
+<!-- Package 2 (Featured VIP) -->
+<div class="bg-[#2C2623] text-[#F5F0EB] rounded-xl p-space-lg border border-[#C5A059] shadow-xl flex flex-col justify-between relative overflow-hidden">
+<div class="absolute -right-10 -top-10 w-40 h-40 bg-primary/20 rounded-full blur-2xl"></div>
+<div>
+<div class="flex justify-between items-start mb-space-md relative z-10">
+<span class="px-3 py-1 rounded-full text-caption bg-primary-container text-on-primary-container font-semibold uppercase">Expérience Ultime</span>
+<span class="font-headline-md text-primary-fixed-dim text-[24px]">720 €</span>
+</div>
+<h3 class="font-headline-sm text-white mb-space-xs relative z-10">Journée Résidentielle Marhaba</h3>
+<p class="text-body-md text-[#F5F0EB]/80 mb-space-lg relative z-10">Une journée entière dédiée à votre bien-être absolu avec un majordome de bain personnel, deux rituels d'exception et privatisation de cabane.</p>
+<ul class="space-y-3 mb-space-lg relative z-10">
+<li class="flex items-center gap-2 text-body-md text-[#F5F0EB]">
+<span class="material-symbols-outlined text-primary-fixed-dim text-[18px]">check_circle</span>
+<span>Privatisation Cabane Océan (6h)</span>
+</li>
+<li class="flex items-center gap-2 text-body-md text-[#F5F0EB]">
+<span class="material-symbols-outlined text-primary-fixed-dim text-[18px]">check_circle</span>
+<span>2 Soins Signature au choix</span>
+</li>
+<li class="flex items-center gap-2 text-body-md text-[#F5F0EB]">
+<span class="material-symbols-outlined text-primary-fixed-dim text-[18px]">check_circle</span>
+<span>Champagne & Déjeuner gastronomique</span>
+</li>
+</ul>
+</div>
+<button class="w-full py-space-sm bg-primary-container text-on-primary-container hover:bg-primary-fixed-dim transition-all rounded-lg text-label-caps uppercase tracking-wider relative z-10" onclick="openBookingModal('Journée Résidentielle Marhaba', '720 €')">Sélectionner le Pass</button>
+</div>
+<!-- Package 3 -->
+<div class="bg-surface rounded-xl p-space-lg border border-[#C5A059]/20 shadow-sm flex flex-col justify-between">
+<div>
+<div class="flex justify-between items-start mb-space-md">
+<span class="text-label-caps text-primary uppercase">VIP Membership</span>
+<span class="font-headline-md text-on-surface text-[24px]">2 400 €</span>
+</div>
+<h3 class="font-headline-sm text-on-surface mb-space-xs">Cercle Privé L'Orchidée</h3>
+<p class="text-body-md text-on-surface-variant mb-space-lg">Abonnement trimestriel incluant 6 soins majeurs, accès illimité prioritaire aux espaces thermaux et conciergerie de santé dédiée.</p>
+<ul class="space-y-3 mb-space-lg">
+<li class="flex items-center gap-2 text-body-md text-on-surface">
+<span class="material-symbols-outlined text-primary text-[18px]">check_circle</span>
+<span>Accès illimité 3 mois</span>
+</li>
+<li class="flex items-center gap-2 text-body-md text-on-surface">
+<span class="material-symbols-outlined text-primary text-[18px]">check_circle</span>
+<span>6 Soins au choix inclus</span>
+</li>
+<li class="flex items-center gap-2 text-body-md text-on-surface">
+<span class="material-symbols-outlined text-primary text-[18px]">check_circle</span>
+<span>Bilan naturopathique offert</span>
+</li>
+</ul>
+</div>
+<button class="w-full py-space-sm bg-[#2C2623] text-[#F5F0EB] hover:bg-primary hover:text-on-primary transition-all rounded-lg text-label-caps uppercase tracking-wider" onclick="openBookingModal('Cercle Privé L\'Orchidée (VIP)', '2 400 €')">Devenir Membre</button>
+</div>
+</div>
+</div>
+</section>
+<!-- 4. Booking Inquiry CTA / Concierge Module -->
+<section class="max-w-[1200px] mx-auto px-gutter-desktop py-[6rem] w-full">
+<div class="bg-surface-container-high rounded-2xl p-space-lg md:p-[4rem] border border-[#C5A059]/30 shadow-xl relative overflow-hidden">
+<div class="absolute top-0 right-0 w-96 h-96 bg-primary-container/10 rounded-full blur-3xl pointer-events-none"></div>
+<div class="max-w-2xl mx-auto text-center mb-space-xl">
+<span class="text-label-caps text-primary uppercase tracking-widest">Réservation Directe</span>
+<h2 class="font-headline-lg text-on-surface text-headline-lg-mobile md:text-headline-lg mt-space-xs mb-space-sm">Planifier Votre Visite</h2>
+<p class="text-body-md text-on-surface-variant">Renseignez vos préférences ci-dessous. Notre concierge thermal vous contactera sous 2 heures pour confirmer votre protocole sur-mesure.</p>
+</div>
+<form class="grid grid-cols-1 md:grid-cols-2 gap-space-lg" id="booking-form" onsubmit="handleBookingSubmit(event)">
+<div>
+<label class="block text-label-caps text-on-surface mb-space-xs">Nom Complet</label>
+<input class="w-full bg-surface border-b-2 border-[#C5A059]/50 focus:border-[#C5A059] px-space-sm py-space-sm text-body-md text-on-surface outline-none transition-colors" placeholder="Ex. Mme. Éléonore de Saint-Germain" required="" type="text"/>
+</div>
+<div>
+<label class="block text-label-caps text-on-surface mb-space-xs">Adresse Email</label>
+<input class="w-full bg-surface border-b-2 border-[#C5A059]/50 focus:border-[#C5A059] px-space-sm py-space-sm text-body-md text-on-surface outline-none transition-colors" placeholder="eleonore@example.com" required="" type="email"/>
+</div>
+<div>
+<label class="block text-label-caps text-on-surface mb-space-xs">Soin ou Pass Souhaité</label>
+<select class="w-full bg-surface border-b-2 border-[#C5A059]/50 focus:border-[#C5A059] px-space-sm py-space-sm text-body-md text-on-surface outline-none transition-colors" id="modal-service-select">
+<option>L'Élixir de l'Orchidée Blanche (240 €)</option>
+<option>Bain Salin & Brume d'Iode (170 €)</option>
+<option>Soin Sublimation Nacre & Algues (195 €)</option>
+<option>Le Grand Rituel Hammam & Argan (210 €)</option>
+<option>Échappée à Deux en Cabane Océan (420 €)</option>
+<option>Infusion Cryo-Marine & Visage (180 €)</option>
+<option>Drainage Lymphatique & Contour (220 €)</option>
+<option>Massage Berbère aux Épices Chaudes (190 €)</option>
+<option>Pass Demi-Journée Parenthèse Marine (380 €)</option>
+<option>Journée Résidentielle Marhaba (720 €)</option>
+<option>Cercle Privé L'Orchidée (VIP)</option>
+</select>
+</div>
+<div>
+<label class="block text-label-caps text-on-surface mb-space-xs">Date Souhaitée</label>
+<input class="w-full bg-surface border-b-2 border-[#C5A059]/50 focus:border-[#C5A059] px-space-sm py-space-sm text-body-md text-on-surface outline-none transition-colors" required="" type="date"/>
+</div>
+<div class="md:col-span-2">
+<label class="block text-label-caps text-on-surface mb-space-xs">Préférences Particulières & Allergies (Optionnel)</label>
+<textarea class="w-full bg-surface border-b-2 border-[#C5A059]/50 focus:border-[#C5A059] px-space-sm py-space-sm text-body-md text-on-surface outline-none transition-colors" placeholder="Précisez vos attentes, préférences d'huiles ou contre-indications médicales..." rows="3"></textarea>
+</div>
+<div class="md:col-span-2 flex justify-center mt-space-md">
+<button class="px-[3rem] py-space-md bg-[#2C2623] text-[#F5F0EB] hover:bg-primary hover:text-on-primary transition-all rounded-lg text-label-caps uppercase tracking-wider flex items-center gap-2 shadow-lg cursor-pointer" type="submit">
+<span class="material-symbols-outlined text-[18px]">calendar_add_on</span>
+<span>Soumettre la Demande de Réservation</span>
+</button>
+</div>
+</form>
+<!-- Success confirmation state hidden by default -->
+<div class="hidden text-center py-space-xl" id="booking-success">
+<div class="w-16 h-16 bg-primary-container rounded-full flex items-center justify-center mx-auto mb-space-md">
+<span class="material-symbols-outlined text-on-primary-container text-[32px]">done</span>
+</div>
+<h3 class="font-headline-md text-on-surface mb-space-xs">Demande Enregistrée avec Succès</h3>
+<p class="text-body-md text-on-surface-variant max-w-md mx-auto">Votre concierge thermal a bien reçu votre demande. Un email de confirmation récapitulatif vous a été envoyé.</p>
+<button class="mt-space-lg px-space-md py-space-xs bg-[#2C2623] text-[#F5F0EB] rounded-lg text-label-caps uppercase" onclick="resetBookingForm()">Nouvelle Réservation</button>
+</div>
+</div>
+</section>
+<!-- Interactive JavaScript for filtering & booking selection -->
+<script>
+    function filterServices(category) {
+      const cards = document.querySelectorAll('.service-card');
+      const tabs = document.querySelectorAll('.service-tab');
+
+      tabs.forEach(tab => {
+        tab.classList.remove('bg-primary-container', 'text-on-primary-container', 'font-semibold');
+        tab.classList.add('text-[#F5F0EB]', 'hover:bg-white/10');
+      });
+      event.target.classList.remove('text-[#F5F0EB]', 'hover:bg-white/10');
+      event.target.classList.add('bg-primary-container', 'text-on-primary-container', 'font-semibold');
+
+      cards.forEach(card => {
+        if (category === 'all' || card.getAttribute('data-category') === category) {
+          card.style.display = 'flex';
+        } else {
+          card.style.display = 'none';
+        }
+      });
+    }
+
+    function openBookingModal(serviceName, price) {
+      const select = document.getElementById('modal-service-select');
+      for (let i = 0; i < select.options.length; i++) {
+        if (select.options[i].text.includes(serviceName.split(' ')[0])) {
+          select.selectedIndex = i;
+          break;
+        }
+      }
+      document.getElementById('booking-form').scrollIntoView({ behavior: 'smooth' });
+    }
+
+    function handleBookingSubmit(event) {
+      event.preventDefault();
+      document.getElementById('booking-form').classList.add('hidden');
+      document.getElementById('booking-success').classList.remove('hidden');
+    }
+
+    function resetBookingForm() {
+      document.getElementById('booking-form').reset();
+      document.getElementById('booking-success').classList.add('hidden');
+      document.getElementById('booking-form').classList.remove('hidden');
+    }
+  </script>
+</div></main><footer class="w-full bg-[#2C2623] text-[#F5F0EB] py-space-xl"><div class="max-w-[1440px] mx-auto px-gutter-desktop flex flex-col md:flex-row justify-between items-center gap-space-lg"><div class="flex flex-col items-center md:items-start gap-space-xs"><span class="font-headline-md text-primary-fixed-dim text-[20px]">L'Orchidée Marhaba Beach</span><p class="text-caption text-[#F5F0EB]/60">Sensory Sanctuary & Coastal Thermal Bath</p></div><div class="flex gap-space-lg text-caption uppercase tracking-widest text-[#F5F0EB]/80"><a class="hover:text-primary-fixed-dim" href="index.html">Privacy</a><a class="hover:text-primary-fixed-dim" href="index.html">Legal Notice</a><a class="hover:text-primary-fixed-dim" href="index.html">Concierge</a></div><div class="text-caption text-[#F5F0EB]/40">© 2024 L'Orchidée Sanctuary. All rights reserved.</div></div></footer></body></html>
